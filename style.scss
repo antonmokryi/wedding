@@ -35,7 +35,7 @@
       font-family: "Libre Baskerville", serif;
       font-weight: 300;
       font-style: normal;
-    //   opacity: 0.9;
+      //   opacity: 0.9;
     }
 
     h2 {
@@ -45,27 +45,56 @@
       font-family: "Libre Baskerville", serif;
       font-weight: 300;
       font-style: normal;
-    //   opacity: 0.9;
+      //   opacity: 0.9;
       text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
         1px 1px 0 black; /* Цвет контура (черный) */
     }
   }
   .header_btn {
     border: 2px solid #fff;
-    color: white;
     padding: 6px;
     font-family: "Libre Baskerville", serif;
     font-weight: 300;
     font-style: normal;
-
+    background-color: transparent; /* прозорий фон */
+    color: white; /* білий колір тексту */
+    padding: 5px;
   }
 }
-.container_btn{
-    position: absolute;
-    width: 100%;
-    height: 64%;
+.container_btn {
+  position: absolute;
+  width: 100%;
+  height: 64%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  label {
+    font-size: 22px;
     display: flex;
-    justify-content: center;
-    align-items: end;
+    flex-direction: column;
+    align-items: start;
+    color: #fff;
+    gap: 20px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 300;
+    font-style: normal;
+    input {
+      width: 100%;
+      border: 1px solid white; /* білий рамка */
+      background-color: transparent; /* прозорий фон */
+      color: white; /* білий колір тексту */
+      padding: 5px;
+    }
+    .header_btn_number {
+      border: 2px solid #fff;
+      padding: 6px;
+      font-family: "Libre Baskerville", serif;
+      font-weight: 300;
+      font-style: normal;
+      background-color: transparent; /* прозорий фон */
+      color: white; /* білий колір тексту */
+      padding: 5px;
+      width: 100%;
+    }
+  }
 }
-
