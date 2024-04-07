@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="image-container"  style="background-image: url('../static/img/1.JPG');"></div>
+        <div class="header_fonts">
+          <div class="header_fonts">
+            <!-- <h1>A | K</h1> -->
+            <h2>Anton & Kristina</h2>
+          </div>
+        </div>
+
+        <div class="container_btn">
+          <button class="header_btn" id="btn">ОТРИМАТИ ВЕСІЛЬНЕ ЗАПРОШЕННЯ</button>
+          <!-- <div id="num_inp"> -->
+            <form action="{{ url_for('search_num') }}" method="post">
+              <label for="" id="num_inp">
+                Введіть свій номер телефону:
+                <input type="text" placeholder="380" name="number" />
+                <button class="header_btn_number" type="submit">Відправити</button>
+              </label>
+            </form>
+          <!-- </div> -->
+        </div>
+
+      </div>
+    </header>
+    <main></main>
+  </body>
+  <script src="{{ url_for('static', filename='js/js.js') }}"></script>
+</html>

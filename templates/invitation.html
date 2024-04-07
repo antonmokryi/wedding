@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    /> -->
+  </head>
+  <body>
+    {% block body %}
+    <main class="inv_main">
+      <div class="hands_photo" style="background-image: url('../static/img/1.JPG');"></div>
+      <div class="invitation">
+        
+        <h1 class="invitation_names">
+          {{names}}
+          <!-- Дорогі наші <br />
+          Андрій та Інна -->
+        </h1>
+        
+        <p>
+          Запрошуємо Вас <br />
+          відсвяткувати з нами найважливішу <br />
+          і найбільш хвилюючую для нас <br />
+          подію - День нашого весілля!
+        </p>
+        <h2 class="date">
+          19 червня <br />
+          12:00
+        </h2>
+        <h3 class="place">
+          с. Вертіївка, Чернігівська область
+          <br />
+          РЕСТОРАН "Могорич" <br />
+        </h3>
+        <h4 class="wellcome">Чекаємо Вас!</h4>
+        <!-- <div class="icons">
+          <div class="icons_first">
+            <span class="material-symbols-outlined"> calendar_month </span>
+            <h2>КОЛИ:</h2>
+            <h3>19 Червня 2024р.</h3>
+          </div>
+          <div class="icons_first">
+            <span class="material-symbols-outlined"> location_on </span>
+            <h2>МІСЦЕ:</h2>
+            <h3>м. Ніжин</h3>
+            <h3>Ресторан "Могорич"</h3>
+          </div>
+        </div> -->
+        <div class="send_answear">
+          <form action="{{ url_for('send_bot') }}" class="send_answear_form" method="post">
+            <h2>НАПИШІТЬ СВОЮ ВІДПОВІДЬ:</h2>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <button type="submit">Відправити</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    {% endblock %}
+  </body>
+</html>
