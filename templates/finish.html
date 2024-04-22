@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body class="body_finish">
+    
+    <div class="finish" style="background-image: url('/static/img/8.jpg')">
+      <div class="finish_h">
+        <h1>
+          Будемо дуже вдячні, <br> якщо підтримаєте український <br> стиль нашого весілля <br> при виборі нарядів.
+        </h1>
+        <h2>Трансфер стартує об 11:30 з центральної площи м. Ніжин, біля готелю "Ніжин"</h2>
+
+        <h2>
+          Приємним компліментом буде для нас, якщо замість квітів ви подаруєте пляшечку вашого улюбленого алкоголю, яку ми відкриємо на найближчому сімейному святі.
+        </h2>
+
+        <div class="finish_btns">
+          <form action="{{ url_for('start') }}">
+            <button class="finish_btns_first">На головну</button>
+          </form>
+        </div>
+
+      </div>
+
+
+    </div>
+  </body>
+</html>

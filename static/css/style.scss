@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Imbue:opsz,wght@10..100,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+
+@font-face {
+  font-family: "AnastasiaScript"; /* Название вашего шрифта */
+  src: url("../fonts/AnastasiaScript.woff") format("woff"); /* Путь к вашему файлу WOFF */
+  /* Можно также указать другие форматы шрифтов, такие как TTF, EOT, SVG и другие */
+  /* Пример: src: url('example.woff') format('woff'), url('example.ttf') format('truetype'); */
+}
+
+@font-face {
+  font-family: "newFont"; /* Название вашего шрифта */
+  src: url("../fonts/Venski_sad_One_Medium.woff") format("woff"); /* Путь к вашему файлу WOFF */
+  /* Можно также указать другие форматы шрифтов, такие как TTF, EOT, SVG и другие */
+  /* Пример: src: url('example.woff') format('woff'), url('example.ttf') format('truetype'); */
+}
+
+@font-face {
+  font-family: "newFonts"; /* Название вашего шрифта */
+  src: url("../fonts/AGReverance.woff") format("woff"); /* Путь к вашему файлу WOFF */
+  /* Можно также указать другие форматы шрифтов, такие как TTF, EOT, SVG и другие */
+  /* Пример: src: url('example.woff') format('woff'), url('example.ttf') format('truetype'); */
+}
+
+.header {
+  width: 100%;
+  display: flex;
+
+  .image-container {
+    width: 100%; /* Занимает всю доступную ширину */
+    height: 100vh; /* Занимает 100% высоты окна просмотра */
+    background-size: cover; /* Растягивает изображение, чтобы оно покрывало всю область контейнера */
+    background-position: center; /* Центрирует изображение */
+  }
+  &_fonts {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    gap: 0px;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+    // margin: -170px auto;
+
+    h1 {
+      font-size: 60px;
+      text-align: center;
+
+      font-size: 60px;
+      color: #ffffff; /* Цвет текста (заливка) */
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black; /* Цвет контура (черный) */
+
+      font-family: "Libre Baskerville", serif;
+
+      font-weight: 300;
+      font-style: normal;
+      //   opacity: 0.9;
+    }
+
+    h2 {
+      opacity: 0.7;
+      font-size: 85px;
+      text-align: center;
+      color: #000000;
+      font-family: "Reddit Mono", serif;
+      font-weight: 300;
+      font-style: normal;
+      //   opacity: 0.9;
+      // text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      //   1px 1px 0 black; /* Цвет контура (черный) */
+    }
+  }
+  .header_btn {
+    border: 2px solid #fff;
+    padding: 6px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: transparent; /* прозорий фон */
+    color: white; /* білий колір тексту */
+    // padding: 5px;
+    font-size: 20px;
+  }
+}
+.container_btn {
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  label {
+    font-size: 22px;
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    color: #fff;
+    gap: 20px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 300;
+    font-style: normal;
+    input {
+      width: 100%;
+      border: 1px solid white; /* білий рамка */
+      background-color: transparent; /* прозорий фон */
+      color: white; /* білий колір тексту */
+      padding: 5px;
+    }
+    .header_btn_number {
+      border: 2px solid #fff;
+      padding: 6px;
+      font-family: "Libre Baskerville", serif;
+      font-weight: 300;
+      font-style: normal;
+      background-color: transparent; /* прозорий фон */
+      color: white; /* білий колір тексту */
+      padding: 5px;
+      width: 100%;
+    }
+  }
+}
+
+.inv_main {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  .hands_photo {
+    width: 80%;
+    height: 50vh;
+    // background-image: url("{{ url_for('static', filename='img/1.JPG') }}");
+    background-size: cover;
+    background-position: 0% 94%;
+    border: 3px solid #fff;
+    margin: 9px auto;
+    // width: 100%; /* Занимает всю доступную ширину */
+    // height: 50vh; /* Занимает 100% высоты окна просмотра */
+    // background-image: url("img/1.JPG"); /* Путь к вашему изображению */
+    // background-size: contain; /* Растягивает изображение, чтобы оно покрывало всю область контейнера */
+    // background-position: center; /* Центрирует изображение */
+  }
+  .invitation {
+    width: 100%;
+    h1 {
+      line-height: 1.2;
+      text-align: center;
+      font-family: "AnastasiaScript";
+      font-weight: 400;
+      font-style: italic;
+      font-size: 50px;
+    }
+    p {
+      margin-top: 5%;
+      text-align: center;
+      font-size: 23px;
+      // font-family: "Old Standard TT", serif;
+      // font-weight: 400;
+      font-family: "Old Standard TT", serif;
+      // font-family: "El Messiri", sans-serif;
+      // font-family: "Jura", sans-serif;
+
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+
+  .icons_first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      font-family: "Libre Baskerville", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 25px;
+    }
+    h3 {
+      font-family: "Libre Baskerville", serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 20px;
+    }
+
+    .material-symbols-outlined {
+      font-size: 300%;
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    }
+  }
+}
+
+.send_answear_form {
+  display: flex;
+  flex-direction: column;
+  height: 35vh;
+  justify-content: center;
+  margin-left: 5%;
+  gap: 10px;
+
+  h2 {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    // /* font-style: italic; */
+    font-size: 20px;
+    color: black;
+  }
+
+  textarea {
+    background-color: transparent; /* Делаем фон прозрачным */
+    border: 1px solid white; /* Добавляем белую рамку */
+    color: rgb(0, 0, 0); /* Устанавливаем цвет текста белым */
+    width: 90%;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #000000;
+    font-size: 20px;
+  }
+  button {
+    width: 90%;
+    border: 1px solid;
+    font-size: 20px;
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    // font-style: italic;
+  }
+}
+
+.date {
+  line-height: 1;
+  margin-top: 5%;
+  text-align: center;
+  font-family: "AnastasiaScript", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 50px;
+}
+.place {
+  text-align: center;
+  margin-top: 5%;
+  // font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.4;
+  font-size: 20px;
+  font-family: "Old Standard TT", serif;
+}
+
+.wellcome {
+  text-align: center;
+  margin-top: 5%;
+
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 23px;
+}
+
+.num_inp {
+  width: 100%;
+  display: none;
+}
+
+//////////////finish
+///
+
+.finish {
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  &_h {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white; /* Колір тексту */
+    text-align: center;
+    font-size: 20px; /* Розмір тексту */
+    font-family: Arial, sans-serif; /* Шрифт тексту */
+    h1 {
+      font-family: "Old Standard TT", serif;
+      color: #ffffff;
+      font-size: 20px;
+      padding: 5px;
+      text-shadow: 4px 2px 14px rgba(0, 0, 0, 1);
+    }
+    h2 {
+      font-family: "Old Standard TT", serif;
+
+      margin-top: 5%;
+
+      color: #ffffff;
+      font-size: 20px;
+      padding: 5px;
+      text-shadow: 4px 2px 14px rgba(0, 0, 0, 0.67);
+    }
+    // h1 {
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   z-index: 2;
+    //   color: white; /* Колір тексту */
+    //   text-align: center;
+    //   font-size: 36px; /* Розмір тексту */
+    //   font-family: Arial, sans-serif; /* Шрифт тексту */
+    // }
+    // h2 {
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   z-index: 2;
+    //   color: white; /* Колір тексту */
+    //   text-align: center;
+    //   font-size: 36px; /* Розмір тексту */
+    //   font-family: Arial, sans-serif; /* Шрифт тексту */
+    // }
+  }
+}
+.finish::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(89 89 89 / 20%);
+  /* Кольорове півпрозоре затемнення */
+  backdrop-filter: blur(3px); /* Розмиття */
+  z-index: 1;
+}
+
+.finish_btns {
+  z-index: 1;
+  margin-top: 10%;
+  width: 100%;
+
+  &_first {
+    background-color: transparent;
+    width: 80%;
+    border: 1px solid;
+    font-size: 25px;
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    text-shadow: 4px 2px 14px rgba(0,0,0, 1);
+  }
+}
