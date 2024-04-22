@@ -11,20 +11,20 @@ cursor = con.cursor()
 #         id INTEGER PRIMARY KEY AUTOINCREMENT,
 #         number INTEGER,
 #         name TEXT,
-#         text TEXT
+#         compliment TEXT
 #     )
 # """)
 
 # con.commit()
 
 
-cursor.execute("INSERT INTO guests(number, name, text) VALUES(068777, 'Дорогі наші <br /> Іван та Сергій', 'skhdf,sdfksdfkshdfkskdjfhskdh')")
-con.commit()
+# cursor.execute("INSERT INTO guests(number, name, compliment) VALUES(380681941410, 'Андрій та Інна', 'Дорогі наші')")
+# con.commit()
 
 cursor.execute("SELECT * FROM guests")
 ss = cursor.fetchall()
 print(ss)
-# for user in cursor.fetchall():
-#     print(user)
+for user in cursor.fetchall():
+    print(user)
 
 

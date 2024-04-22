@@ -56,7 +56,8 @@ def invitation():
     for num in cursor.fetchall():
         if user_num == num[1]:
             names = num[2]
-            return render_template('invitation.html', names=names)
+            compliment = num[3]
+            return render_template('invitation.html', names=names, compliment=compliment)
 
 
 
@@ -92,7 +93,11 @@ def send_bot():
 
 @app.route('/finish')
 def finish():
-    return render_template('finish.html')
+    resp = make_response(render_template('finish.html'))
+
+    resp.set_cookie('user_id', '', expires=0)
+
+    return resp
 
 if __name__ == "__main__":
     app.run()
